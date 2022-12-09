@@ -14,118 +14,22 @@
 
 <body>
   <header>
-    <div class="header1 flex">
-      <h2>Découvrez notre édition hiver 2022</h2>
-      <div class="flex container-decouverte">
-        <div class="flex decouverte">
-          <p>Lancer la vidéo</p>
-          <p>Découvrir les nouveautés</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="header2 flex">
-      <img id='logo' src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg" alt="">
-
-      <div class="flex container-menu-central">
-        <ul class="flex menu-central">
-          <li class="strong">
-            N'importe où
-          </li>
-          <li class="strong">
-            Une semaine
-          </li>
-          <li>
-            Ajouter des voyageurs
-          </li>
-          <li class="container-icon">
-            <span class="material-symbols-outlined container-icon-fond">
-              search
-            </span>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <ul class="flex container-flex-end">
-          <li>
-            Mettre mon logement sur Airbnb
-          </li>
-          <li>
-            <span class="material-symbols-outlined">
-              language
-            </span>
-          </li>
-          <li>
-            <div class="flex container-count">
-              <span class="material-symbols-outlined">
-                menu
-              </span>
-              <div class="container-icon">
-                <span class="material-symbols-outlined container-icon-fond">
-                  person
-                </span>
-              </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <div>
+      {% include 'header1.html' %}
     </div>
     <div>
+      {% include 'header2.html' %}
+      {% include 'header3.html' %}
+    </div>   
+    <div>
       <ul class="flex container-choice">
-        <li>
-          <img src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt="">
-          <p>Bord de Mer</p>
-        </li>
-        <li>
-          <img src="https://a0.muscache.com/pictures/35919456-df89-4024-ad50-5fcb7a472df9.jpg" alt="">
-          <p>Tiny Houses</p>
-        </li>
-        <li>
-          <img src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="">
-          <p>Avec vue</p>
-        </li>
-        <li>
-          <img src="https://a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="">
-          <p>Grandes demeures</p>
-        </li>
-        <li>
-          <img src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg" alt="">
-          <p>Design</p>
-        </li>
-        <li>
-          <img src="https://a0.muscache.com/pictures/757deeaa-c78f-488f-992b-d3b1ecc06fc9.jpg" alt="">
-          <p>Au pied des pistes</p>
-        </li>
-        <li>
-          <img src="https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg" alt="">
-          <p>Luxe</p>
-        </li>
-        <li>
-          <img src="https://a0.muscache.com/pictures/89faf9ae-bbbc-4bc4-aecd-cc15bf36cbca.jpg" alt="">
-          <p>Dômes</p>
-        </li>
-        <li>
-          <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="">
-          <p>Piscines</p>
-        </li>
-        <li>
-          <img src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt="">
-          <p>Chateaux</p>
-        </li>
-        <li>
-          <img src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt="">
-          <p>Wow !</p>
-        </li>
-        <li>
-          <img src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg" alt="">
-          <p>Cabanes perchées</p>
+        {% include 'nav.html'%}
       </ul>
-    </div>
+    </div>    
   </header>
   <main>
     {% block content %}{% endblock %}
-  </main>  
+  </main>
 </body>
 
 </html>

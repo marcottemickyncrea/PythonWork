@@ -145,6 +145,11 @@ main {
     color: white;
 }
 
+.container-image .material-symbols-outlined {
+    width: min-content;
+    height: min-content;
+}
+
 .container-info .flex{
     justify-content: space-between;
 }
