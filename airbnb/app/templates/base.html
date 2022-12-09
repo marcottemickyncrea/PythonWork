@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+  {% if title %}
+  <title>{{ title }} - Airbnb</title>
+  {% else %}
+  <title>Airbnb</title>
+  {% endif %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }} ">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <header>
+
+    <div class="header1 flex">
+      <h2>Découvrez notre édition hiver 2022</h2>
+      <div class="flex container_decouverte">
+        <div class="flex decouverte">
+          <p>Lancer la vidéo</p>
+          <p>Découvrir les nouveautés</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="header2 flex">
+      <img id='logo' src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg" alt="">
+
+      <div class="flex container_menu_central">
+        <ul class="flex menu_central">
+          <li class="strong">
+            N'importe où
+          </li>
+          <li class="strong">
+            Une semaine
+          </li>
+          <li>
+            Ajouter des voyageurs
+          </li>
+          <li class="container-icon">
+            <span class="material-symbols-outlined container-icon-fond">
+              search
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="flex container-flex-end">
+          <li>
+            Mettre mon logement sur Airbnb
+          </li>
+          <li>
+            <span class="material-symbols-outlined">
+              language
+            </span>
+          </li>
+          <li>
+            <div class="flex container-count">
+              <span class="material-symbols-outlined">
+                menu
+              </span>
+              <div class="container-icon">
+                <span class="material-symbols-outlined container-icon-fond">
+                  person
+                </span>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    
+  </header>
+  {% block content %}{% endblock %}
+</body>
+
+</html>

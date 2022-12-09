@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.header1  {
+    background-color: #F7F7F7;
+    border-top: 1px solid rgb(218, 213, 213);
+    border-bottom: 1px solid rgb(218, 213, 213);
+}
+
+h2 {
+    display: inline;
+}
+
+.container_decouverte {
+    width: 78%;
+    justify-content: end;
+}
+
+.decouverte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decouverte p {    
+    margin: 5px;    
+}
+
+.header2 {
+    padding: 0 50px;
+    border-bottom: 1px solid rgb(218, 213, 213);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_menu_central {
+    border: 1px solid grey;
+    border-radius: 30px;
+    align-items: center;  
+    height: 100%;  
+    margin: 20px 0;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+.menu_central {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu_central li {
+    margin: -5px 5px;
+    padding: 0;
+}
+
+.container-icon {
+    background-color: red;
+    border-radius: 20px;  
+    margin: 5px;  
+}
+
+.container-icon-fond {
+    padding: 5px;
+    color: white;
+}
+
+#logo {
+    width: 100px;
+}
+
+.container-flex-end {
+    align-items: center;
+    list-style: none;
+}
+
+.container-flex-end li{
+    padding: 0 15px;
+}
+
+.container-count {
+    border: 1px solid black;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
