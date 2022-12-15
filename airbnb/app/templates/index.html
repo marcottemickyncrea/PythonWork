@@ -1,26 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% for post in posts %}
+{% for destination in destinations %}
 <div class="container-location">
-    <div class='container-image' style="background-image: url({{post.url}});">
+    <div class='container-image' style="background-image: url({{destination[1]}});">
         <span class="material-symbols-outlined">
             favorite
             </span></div>  
     <div class="container-info">
         <div class="flex">
-            <p class="strong">{{post.adresse}}</p>
+            <p class="strong">{{destination[2]}}</p>
             <div class="flex container-note">
                 <span class="material-symbols-outlined">
                     star
                     </span>
-                <p class="note">{{post.note}}</p>
+                <p class="note">{{destination[6]}}</p>
             </div>
             
         </div>
-        <p>{{post.type}}</p>
-        <p>{{post.date}}</p>
-        <p class="prix"><span class="strong">{{post.prix}}</span> par nuit</p>
+        <p>{{destination[3]}}</p>
+        <p>{{destination[4]}}</p>
+        <p class="prix"><span class="strong">{{destination[5]}} €</span> par nuit</p>
     </div>
 </div>
 {% endfor %}
