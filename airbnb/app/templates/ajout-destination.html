@@ -5,7 +5,7 @@
     <form action="" method="POST">
         <div>
             <label for="url-image"> Lien pour l'image principale :
-                <input type="text" name="url-image" id="url-image" value="{{ request.form['url-image'] }}">
+                <input type="text" name="url-image" id="url-image">
             </label>
         </div>
         <span class="material-symbols-outlined">
@@ -13,7 +13,7 @@
             </span>
         <div>
             <label for="localisation"> Localisation du bien :
-                <input type="text" name="localisation" id="localisation" value="{{ request.form['localisation'] }}">
+                <input type="text" name="localisation" id="localisation">
             </label>
         </div>
         <span class="material-symbols-outlined">
@@ -21,7 +21,10 @@
             </span>
         <div>
             <label for="type">Type :
-                <input type="text" name="type" id="type" value="{{ request.form['type']}}">  
+                <select name="type" id="type">
+                    <option value="Particulier">Particulier</option>
+                    <option value="Professionnel">Professionnel</option>                    
+                </select>
             </label>
         </div>
         <span class="material-symbols-outlined">
@@ -29,7 +32,7 @@
             </span>
         <div>
             <label for="dates"> Vos dates de disponibilité :
-                <input type="text" name="dates" id="dates" value="{{ request.form['dates'] }}">
+                <input type="text" name="dates" id="dates">
             </label>
         </div>
         <span class="material-symbols-outlined">
@@ -37,7 +40,7 @@
             </span>
         <div>
             <label for="prix"> Loyer demandé pour une journée :
-                <input type="prix" name="prix" id="prix" value="{{ request.form['prix'] }}">
+                <input type="prix" name="prix" id="prix">
             </label>
         </div>
         <span class="material-symbols-outlined">
