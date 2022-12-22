@@ -22,7 +22,14 @@ def destinations():
     destinations = cursor.fetchall()
     cursor.close()
     bdd.close()
-    return render_template('index.html', destinations = destinations)
+    response = False
+    fichier = 'index.html'
+    if response:
+        fichier = 'index.html'
+    else:
+        fichier='index copy.html'
+
+    return render_template(fichier, destinations = destinations)
 
 @app.route('/ajout-destination', methods= ['GET', 'POST'])
 def ajouter_destination():
