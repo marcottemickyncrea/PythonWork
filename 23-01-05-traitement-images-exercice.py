@@ -62,7 +62,6 @@ from PIL import ImageFilter
 from PIL import Image
 import numpy as np
 
-#cam = cv2.VideoCapture(0)
 def capture_cam_video_floutée(source):
     '''
     cam = cv2.VideoCapture(0) #source webcam
